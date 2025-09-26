@@ -11,23 +11,23 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Paleta principal para advocacia - Dourado e Preto */
+    /* Azul escuro elegante para advocacia */
     --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
+    --foreground: 220 45% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
+    --card-foreground: 220 45% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover-foreground: 220 45% 12%;
 
     /* Dourado elegante para advocacia */
     --primary: 45 86% 58%;
-    --primary-foreground: 0 0% 8%;
+    --primary-foreground: 220 45% 12%;
     --primary-glow: 45 100% 65%;
 
-    /* Cinza escuro elegante */
-    --secondary: 220 13% 18%;
+    /* Azul escuro principal */
+    --secondary: 220 45% 12%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 220 14% 96%;
@@ -43,14 +43,14 @@ All colors MUST be HSL.
     --input: 220 13% 91%;
     --ring: 45 86% 58%;
 
-    /* Gradientes elegantes para advocacia */
-    --gradient-hero: linear-gradient(135deg, hsl(45 86% 58% / 0.9), hsl(45 100% 65% / 0.7));
-    --gradient-dark: linear-gradient(135deg, hsl(220 13% 18%), hsl(220 13% 12%));
+    /* Gradientes elegantes para advocacia - azul escuro */
+    --gradient-hero: linear-gradient(135deg, hsl(220 45% 12% / 0.95), hsl(215 50% 8% / 0.9));
+    --gradient-dark: linear-gradient(135deg, hsl(220 45% 12%), hsl(215 50% 8%));
     --gradient-gold: linear-gradient(135deg, hsl(45 86% 58%), hsl(45 100% 65%));
 
     /* Sombras elegantes */
     --shadow-elegant: 0 10px 40px -10px hsl(45 86% 58% / 0.2);
-    --shadow-dark: 0 10px 40px -10px hsl(220 13% 18% / 0.3);
+    --shadow-dark: 0 10px 40px -10px hsl(220 45% 12% / 0.3);
 
     --radius: 0.75rem;
 
@@ -72,32 +72,32 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 13% 12%;
+    --background: 220 45% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 220 13% 15%;
+    --card: 220 45% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 220 13% 15%;
+    --popover: 220 45% 10%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 45 86% 58%;
-    --primary-foreground: 0 0% 8%;
+    --primary-foreground: 220 45% 8%;
 
-    --secondary: 220 13% 18%;
+    --secondary: 220 45% 12%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 13% 18%;
+    --muted: 220 45% 12%;
     --muted-foreground: 220 8.9% 65.1%;
 
     --accent: 45 86% 58%;
-    --accent-foreground: 0 0% 8%;
+    --accent-foreground: 220 45% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 18%;
-    --input: 220 13% 18%;
+    --border: 220 45% 15%;
+    --input: 220 45% 15%;
     --ring: 45 86% 58%;
   }
 }
@@ -130,14 +130,14 @@ All colors MUST be HSL.
   }
 
   .hero-section {
-    background: linear-gradient(135deg, hsl(220 13% 12% / 0.95), hsl(220 13% 18% / 0.9)), 
+    background: linear-gradient(135deg, hsl(220 45% 8% / 0.95), hsl(215 50% 6% / 0.9)), 
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="scales" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M5,0 L10,5 L5,10 L0,5 Z" fill="none" stroke="rgb(255,255,255)" stroke-width="0.1" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23scales)"/></svg>');
     background-size: cover, 50px 50px;
     background-position: center, 0 0;
   }
 
   .section-gradient {
-    background: linear-gradient(135deg, hsl(220 13% 18%), hsl(220 13% 12%));
+    background: linear-gradient(135deg, hsl(220 45% 12%), hsl(215 50% 8%));
   }
 
   .text-gold {
