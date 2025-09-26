@@ -10,54 +10,58 @@ const HeroSection = () => {
   return (
     <section className="hero-section min-h-screen flex items-center justify-center py-20">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <div className="mb-6">
-              <div className="inline-flex items-center space-x-2 mb-4">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                  <span className="text-primary-foreground font-display font-bold text-xl">C</span>
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="text-left max-w-2xl">
+            {/* Logo no topo */}
+            <div className="mb-8">
+              <div className="flex items-center space-x-3 mb-2">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-primary-foreground font-display font-bold text-2xl">C</span>
                 </div>
-                <div className="text-left">
-                  <h3 className="font-display font-semibold text-primary text-lg">
+                <div>
+                  <h3 className="font-display font-bold text-primary text-2xl tracking-wide">
                     CARDOSO & ADVOGADOS
                   </h3>
-                  <p className="text-xs text-primary/80">Advocacia e assessoria jurídica</p>
+                  <p className="text-primary/80 text-sm tracking-widest">
+                    — Advocacia e assessoria jurídica —
+                  </p>
                 </div>
               </div>
             </div>
             
-            <h1 className="text-5xl lg:text-6xl font-display font-bold text-primary mb-6">
+            {/* Título principal */}
+            <h1 className="text-5xl lg:text-7xl font-display font-bold text-gold mb-8 leading-tight">
               Advogada Previdenciária
             </h1>
             
-            <div className="text-xl lg:text-2xl text-white leading-relaxed mb-8 space-y-2">
-              <p>Está em busca de <span className="text-primary font-semibold">benefícios previdenciários?</span></p>
+            {/* Texto descritivo */}
+            <div className="text-xl lg:text-2xl text-white leading-relaxed mb-8 space-y-1">
+              <p>Está em busca de benefícios previdenciários?</p>
               <p>Conte com nossa orientação</p>
               <p>jurídica especializada para garantir</p>
-              <p><span className="text-primary font-semibold">seus Direitos.</span></p>
+              <p>seus Direitos.</p>
             </div>
             
+            {/* Botão WhatsApp */}
             <Button 
               onClick={handleWhatsAppClick}
               size="lg"
-              className="btn-whatsapp text-lg px-8 py-4 hover:scale-105 transition-all duration-300"
+              className="bg-green-500 hover:bg-green-600 text-white font-medium text-lg px-8 py-4 rounded-lg transition-all duration-300 flex items-center gap-3 hover:scale-105"
             >
-              <MessageCircle className="w-5 h-5" />
+              <MessageCircle className="w-6 h-6" />
               Fale com a Advogada Especialista
             </Button>
           </div>
           
-          <div className="relative">
+          {/* Imagem da advogada */}
+          <div className="relative flex justify-center lg:justify-end">
             <div className="relative z-10">
               <img 
                 src={lawyerHero} 
                 alt="Dra. Paloma Cardoso - Advogada Previdenciária"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-elegant"
+                className="w-full max-w-lg mx-auto lg:max-w-xl object-cover rounded-2xl"
               />
             </div>
-            {/* Elementos decorativos */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 border-2 border-primary/30 rounded-full animate-pulse"></div>
-            <div className="absolute -bottom-4 -left-4 w-16 h-16 border-2 border-primary/30 rounded-full animate-pulse delay-1000"></div>
           </div>
         </div>
       </div>
