@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Importação de fontes premium para advocacia */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+/* Importação de fontes modernas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
@@ -34,13 +34,13 @@ All colors MUST be HSL.
     --muted-foreground: 220 8.9% 46.1%;
 
     --accent: 45 86% 58%;
-    --accent-foreground: 0 0% 8%;
+    --accent-foreground: 220 45% 12%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
+    --border: 220 30% 88%;
+    --input: 220 30% 88%;
     --ring: 45 86% 58%;
 
     /* Gradientes elegantes para advocacia - azul escuro */
@@ -75,19 +75,19 @@ All colors MUST be HSL.
     --background: 220 45% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 220 45% 10%;
-    --card-foreground: 0 0% 98%;
+    --card: 220 40% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 45% 10%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 220 40% 12%;
+    --popover-foreground: 0 0% 95%;
 
     --primary: 45 86% 58%;
     --primary-foreground: 220 45% 8%;
 
-    --secondary: 220 45% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 220 40% 15%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 45% 12%;
+    --muted: 220 40% 15%;
     --muted-foreground: 220 8.9% 65.1%;
 
     --accent: 45 86% 58%;
@@ -96,8 +96,8 @@ All colors MUST be HSL.
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 45% 15%;
-    --input: 220 45% 15%;
+    --border: 220 40% 18%;
+    --input: 220 40% 18%;
     --ring: 45 86% 58%;
   }
 }
@@ -116,7 +116,7 @@ All colors MUST be HSL.
   }
 
   .font-display {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   .font-body {
